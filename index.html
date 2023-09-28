@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-14 JS</title>
+</head>
+<body>
+    <p>Завдання 7</p>
+    <input id="input1" placeholder="Введіть суму для начислення" type="number">
+    <button onclick="account.deposit(Number(input1.value))">Поповнити</button>
+<br>
+    <input id="input2" placeholder="Введіть суму для зняття" type="number">
+    <button onclick="account.withdraw(Number(input2.value))">Зняти</button>
+<br>
+<br>
+    <input id="input3" placeholder="Введіть айді транзакції" type="number">
+    <button onclick="account.getTransactionDetails(Number(input3.value))">Знайти транзакцію за айді</button>
+
+    <button onclick="account.getTransactionTotal(select.value)">Знайти всі транзакції певного типу</button>
+    <select name="transaction-select" id="select">
+        <option value="deposit">Поповнюючі</option>
+        <option value="withdraw">Знімаючі</option>
+    </select>
+    <script src="main.js"></script>
+</body>
+</html>
